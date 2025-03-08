@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: red;
+    overflow: hidden;
+}
+.gamecontainer{
+background-image: url(HD-wallpaper-tom-clancys-ghost-recon-wildlands-nature-tom-clancys-ghost-recon-wildlands-2019-games-games-xbox-games-ps4-games-thumbnail.jpg);
+background-size: 100vw 100vh;
+background-repeat: no-repeat;
+width: 100%;
+height: 100vh;
+}
+.dino{
+    background-image: url(pngwing.com.png);
+    background-repeat: no-repeat; 
+    width: 135px;
+    height: 195px;
+    background-size:cover;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+}
+.obstracale{
+    background-image: url(img3.png);
+    background-size:cover;
+    width: 112px;
+    height: 145px;
+    position: absolute;
+    bottom: 0;
+    left: 40vw;
+}
+.animateDino{
+    animation: dino 0.6s linear;
+}
+.gameOver{
+    top: 63px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 54px;
+    visibility: hidden;
+}
+#scorecount{
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+    right:25px;
+    top: 23px;
+    width: 17vw;
+    height: 4vh;
+    border: 2px solid white;
+}
+.obstracaleAni{
+    animation: obstracaleAni 8s linear infinite;
+}
+@keyframes dino{
+    0%{
+bottom: 0;
+    }
+    50%{
+bottom: 400px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+@keyframes obstracaleAni{
+    0%{
+left: 100vw;
+    }
+    50%{
+
+    }
+    100%{
+left: -10vw;
+    }
+}
